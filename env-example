@@ -1,0 +1,11 @@
+CONFLUENT_CLOUD_BASE_URL=https://api.confluent.cloud
+CONFLUENT_CLOUD_API_KEY=<The API key for accessing confluent cloud>
+CONFLUENT_CLOUD_API_SECRET=<The API secret for accessing confluent cloud>
+
+CONFLUENT_CLOUD_CLUSTER_API_ENDPOINT=<The REST endpoint of a cluster>
+CONFLUENT_CLOUD_CLUSTER_API_KEY=<The API key for accessing the cluster (NOT THE CLOUD API KEY)>
+CONFLUENT_CLOUD_CLUSTER_API_SECRET=<The API secret for accessing the cluster (NOT THE CLOUD API SECRET)>
+
+CONFLUENT_CLOUD_STREAM_GOVERNANCE_API_ENDPOINT=<The REST endpoint of your stream governance entity>
+CONFLUENT_CLOUD_STREAM_GOVERNANCE_API_KEY=<The API key for accessing stream governance (NOT THE CLOUD API KEY)>
+CONFLUENT_CLOUD_STREAM_GOVERNANCE_API_SECRET=<The API secret for accessing stream governance (NOT THE CLOUD API SECRET)>
