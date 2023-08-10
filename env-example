@@ -9,3 +9,5 @@ CONFLUENT_CLOUD_CLUSTER_API_SECRET=<The API secret for accessing the cluster (NO
 CONFLUENT_CLOUD_STREAM_GOVERNANCE_API_ENDPOINT=<The REST endpoint of your stream governance entity>
 CONFLUENT_CLOUD_STREAM_GOVERNANCE_API_KEY=<The API key for accessing stream governance (NOT THE CLOUD API KEY)>
 CONFLUENT_CLOUD_STREAM_GOVERNANCE_API_SECRET=<The API secret for accessing stream governance (NOT THE CLOUD API SECRET)>
+
+CONFLUENT_CLOUD_METRICS_API_ENDPOINT=https://api.telemetry.confluent.cloud

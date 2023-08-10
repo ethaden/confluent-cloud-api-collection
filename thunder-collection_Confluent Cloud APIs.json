@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Confluent Cloud APIs",
-    "dateExported": "2023-08-10T12:31:09.965Z",
+    "dateExported": "2023-08-10T13:12:34.675Z",
     "version": "1.1",
     "folders": [
         {
@@ -591,9 +591,230 @@
             "containerId": "",
             "created": "2023-08-10T12:11:18.565Z",
             "sortNum": 2150000
+        },
+        {
+            "_id": "1f118f92-b08b-43cf-867a-54cd5169b5db",
+            "name": "Metrics API (v2)",
+            "containerId": "",
+            "created": "2023-08-10T12:54:56.476Z",
+            "sortNum": 2160000
         }
     ],
     "requests": [
+        {
+            "_id": "2fad06aa-bf3b-4373-b15e-35e1f43c001a",
+            "colId": "7e9f0143-9c17-4f1a-b05c-b7f90b8e9196",
+            "containerId": "1f118f92-b08b-43cf-867a-54cd5169b5db",
+            "name": "List metric descriptors",
+            "url": "{{CONFLUENT_CLOUD_METRICS_API_ENDPOINT}}/v2/metrics/{dataset}/descriptors/metrics",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-10T12:59:00.305Z",
+            "modified": "2023-08-10T13:07:49.536Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dataset",
+                    "value": "cloud",
+                    "isPath": true
+                },
+                {
+                    "name": "page_size",
+                    "value": "100",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "page_token",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "resource_type",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{CONFLUENT_CLOUD_API_KEY}}",
+                    "password": "{{CONFLUENT_CLOUD_API_SECRET}}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "c52b1f17-4aa5-4d66-91dc-1b7d405eaf1d",
+            "colId": "7e9f0143-9c17-4f1a-b05c-b7f90b8e9196",
+            "containerId": "1f118f92-b08b-43cf-867a-54cd5169b5db",
+            "name": "List resource descriptors",
+            "url": "{{CONFLUENT_CLOUD_METRICS_API_ENDPOINT}}/v2/metrics/{dataset}/descriptors/resources",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-10T12:59:02.207Z",
+            "modified": "2023-08-10T13:07:29.316Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dataset",
+                    "value": "cloud",
+                    "isPath": true
+                },
+                {
+                    "name": "page_size",
+                    "value": "100",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "page_token",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{CONFLUENT_CLOUD_API_KEY}}",
+                    "password": "{{CONFLUENT_CLOUD_API_SECRET}}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e59ae46-5659-49d0-b288-4324e89962c3",
+            "colId": "7e9f0143-9c17-4f1a-b05c-b7f90b8e9196",
+            "containerId": "1f118f92-b08b-43cf-867a-54cd5169b5db",
+            "name": "Query metric values",
+            "url": "{{CONFLUENT_CLOUD_METRICS_API_ENDPOINT}}/v2/metrics/{dataset}/query",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-10T12:59:04.262Z",
+            "modified": "2023-08-10T13:11:55.821Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dataset",
+                    "value": "cloud",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"aggregations\": [\n    {\n      \"metric\": \"\"\n    }\n  ],\n  \"group_by\": [\n    \"thunder\"\n  ],\n  \"granularity\": {},\n  \"filter\": {},\n  \"order_by\": [\n    {\n      \"metric\": \"\",\n      \"agg\": {},\n      \"order\": \"DESCENDING\"\n    }\n  ],\n  \"intervals\": [\n    {}\n  ],\n  \"limit\": 100,\n  \"format\": {}\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{CONFLUENT_CLOUD_API_KEY}}",
+                    "password": "{{CONFLUENT_CLOUD_API_SECRET}}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "2f30403e-c197-4718-bc07-72d917e6f4cd",
+            "colId": "7e9f0143-9c17-4f1a-b05c-b7f90b8e9196",
+            "containerId": "1f118f92-b08b-43cf-867a-54cd5169b5db",
+            "name": "Export metric values",
+            "url": "{{CONFLUENT_CLOUD_METRICS_API_ENDPOINT}}/v2/metrics/{dataset}/export",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-08-10T12:59:07.213Z",
+            "modified": "2023-08-10T13:08:39.765Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dataset",
+                    "value": "cloud",
+                    "isPath": true
+                },
+                {
+                    "name": "resource.kafka.id",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "resource.connector.id",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "resource.custom_connector.id",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "resource.ksql.id",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "resource.schema_registry.id",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "metric",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{CONFLUENT_CLOUD_API_KEY}}",
+                    "password": "{{CONFLUENT_CLOUD_API_SECRET}}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "65a99c8c-78f4-4a9a-82a5-3ae1b2ea580d",
+            "colId": "7e9f0143-9c17-4f1a-b05c-b7f90b8e9196",
+            "containerId": "1f118f92-b08b-43cf-867a-54cd5169b5db",
+            "name": "Query label values",
+            "url": "/v2/metrics/{dataset}/attributes?page_token=thunder",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-08-10T12:59:08.943Z",
+            "modified": "2023-08-10T12:59:08.943Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dataset",
+                    "isPath": true,
+                    "value": "thunder"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"metric\": \"thunder\",\n  \"group_by\": [\n    \"thunder\"\n  ],\n  \"filter\": {},\n  \"intervals\": [\n    {}\n  ],\n  \"limit\": 100\n}"
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                }
+            }
+        },
         {
             "_id": "568a6eb0-3c59-4f32-bd24-7b8a53630674",
             "colId": "7e9f0143-9c17-4f1a-b05c-b7f90b8e9196",
@@ -620,6 +841,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -750,8 +976,13 @@
             "params": [
                 {
                     "name": "page_size",
-                    "value": "10",
-                    "isPath": false
+                    "isPath": false,
+                    "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -885,6 +1116,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -967,6 +1203,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1075,6 +1316,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1227,6 +1473,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1344,6 +1595,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "100"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1446,6 +1702,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "100"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1578,6 +1839,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "100"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1734,6 +2000,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "100"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1795,9 +2066,13 @@
                 },
                 {
                     "name": "page_size",
-                    "value": "10",
-                    "isDisabled": true,
-                    "isPath": false
+                    "isPath": false,
+                    "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -1946,6 +2221,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4256,6 +4536,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4323,6 +4608,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4380,6 +4670,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4485,6 +4780,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4542,6 +4842,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -6612,6 +6917,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -6802,6 +7112,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -6940,6 +7255,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7059,6 +7379,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7258,6 +7583,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7415,6 +7745,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7577,6 +7912,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7739,6 +8079,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7901,6 +8246,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8063,6 +8413,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8230,6 +8585,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8387,6 +8747,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8459,6 +8824,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8510,6 +8880,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8662,6 +9037,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8804,6 +9184,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8971,6 +9356,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9149,8 +9539,13 @@
                 },
                 {
                     "name": "page_size",
-                    "value": "10",
-                    "isPath": false
+                    "isPath": false,
+                    "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9294,6 +9689,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "100"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9456,6 +9856,11 @@
                     "name": "page_size",
                     "isPath": false,
                     "value": "10"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9566,8 +9971,13 @@
                 },
                 {
                     "name": "page_size",
-                    "value": "5000",
-                    "isPath": false
+                    "isPath": false,
+                    "value": "5000"
+                },
+                {
+                    "name": "page_token",
+                    "isPath": false,
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9581,7 +9991,6 @@
         }
     ],
     "settings": {
-        "docs": "Create an environment and add it to this collection, providing the following variables:\n\nCONFLUENT_CLOUD_BASE_URL=https://api.confluent.cloud\n\nCONFLUENT_CLOUD_API_KEY=<The API key for accessing confluent cloud>\n\nCONFLUENT_CLOUD_API_SECRET=<The API secret for accessing confluent cloud>\n\n\nCONFLUENT_CLOUD_CLUSTER_API_ENDPOINT=<The REST endpoint of a cluster>\n\nCONFLUENT_CLOUD_CLUSTER_API_KEY=<The API key for accessing the cluster (NOT THE CLOUD API KEY)>\n\nCONFLUENT_CLOUD_CLUSTER_API_SECRET=<The API secret for accessing the cluster (NOT THE CLOUD API SECRET)>\n\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_ENDPOINT=<The REST endpoint of your stream governance entity>\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_KEY=<The API key for accessing stream governance (NOT THE CLOUD API KEY)>\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_SECRET=<The API secret for accessing stream governance  (NOT THE CLOUD API SECRET)>\n",
-        "envId": "3d4e9579-179e-4e38-961a-014e2a3c5dd3"
+        "docs": "This is a Confluent Cloud API collection for the extension `Thunder Client` for Visual Studio Code.\nIt is based on the OpenAPI specification released by Confluent, see https://docs.confluent.io/cloud/current.\n\nCAUTION: Everything contained in this repository is not supported by Confluent.\n\nDISCLAIMER AND WARNING: You use this code at your own risk! Please do not use it for production systems. The author may not be held responsible for any harm caused by this code!\n\nHow to use:\nCreate an environment and add it to this collection, providing the following variables:\n\nCONFLUENT_CLOUD_BASE_URL=https://api.confluent.cloud\n\nCONFLUENT_CLOUD_API_KEY=<The API key for accessing confluent cloud>\n\nCONFLUENT_CLOUD_API_SECRET=<The API secret for accessing confluent cloud>\n\n\nCONFLUENT_CLOUD_CLUSTER_API_ENDPOINT=<The REST endpoint of a cluster>\n\nCONFLUENT_CLOUD_CLUSTER_API_KEY=<The API key for accessing the cluster (NOT THE CLOUD API KEY)>\n\nCONFLUENT_CLOUD_CLUSTER_API_SECRET=<The API secret for accessing the cluster (NOT THE CLOUD API SECRET)>\n\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_ENDPOINT=<The REST endpoint of your stream governance entity>\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_KEY=<The API key for accessing stream governance (NOT THE CLOUD API KEY)>\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_SECRET=<The API secret for accessing stream governance  (NOT THE CLOUD API SECRET)>\n\nCONFLUENT_CLOUD_METRICS_API_ENDPOINT=https://api.telemetry.confluent.cloud\n"
     }
 }
