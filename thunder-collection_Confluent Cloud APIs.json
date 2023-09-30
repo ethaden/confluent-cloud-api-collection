@@ -795,7 +795,7 @@
                 {
                     "name": "dataset",
                     "isPath": true,
-                    "value": "thunder"
+                    "value": ""
                 },
                 {
                     "name": "page_token",
@@ -2128,7 +2128,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -2189,7 +2189,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -2215,7 +2215,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "page_size",
@@ -2280,7 +2280,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -2311,7 +2311,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4515,7 +4515,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "network",
@@ -4525,7 +4525,7 @@
                 {
                     "name": "kafka_cluster",
                     "isPath": false,
-                    "value": "lkc-00000"
+                    "value": ""
                 },
                 {
                     "name": "id",
@@ -4571,7 +4571,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "network",
@@ -4581,7 +4581,7 @@
                 {
                     "name": "kafka_cluster",
                     "isPath": false,
-                    "value": "lkc-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4836,7 +4836,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "page_size",
@@ -4901,7 +4901,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -4962,7 +4962,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7734,7 +7734,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "connection_type",
@@ -7804,7 +7804,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7865,7 +7865,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -7901,7 +7901,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.network",
@@ -7971,7 +7971,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8032,7 +8032,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8068,7 +8068,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.network",
@@ -8138,7 +8138,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8199,7 +8199,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8235,7 +8235,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.network",
@@ -8305,7 +8305,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8366,7 +8366,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8402,7 +8402,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.network",
@@ -8472,7 +8472,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8533,7 +8533,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8569,7 +8569,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.network",
@@ -8644,7 +8644,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8705,7 +8705,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -8741,7 +8741,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "page_size",
@@ -8874,7 +8874,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "page_size",
@@ -8939,7 +8939,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9000,7 +9000,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9026,7 +9026,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.private_link_attachment",
@@ -9096,7 +9096,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9157,7 +9157,7 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9529,12 +9529,12 @@
             "params": [
                 {
                     "name": "spec.cluster",
-                    "value": "lkc-xxxxx",
+                    "value": "",
                     "isPath": false
                 },
                 {
                     "name": "environment",
-                    "value": "env-xxxxx",
+                    "value": "",
                     "isPath": false
                 },
                 {
@@ -9678,12 +9678,12 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.kafka_cluster",
                     "isPath": false,
-                    "value": "lkc-00000"
+                    "value": ""
                 },
                 {
                     "name": "page_size",
@@ -9748,12 +9748,12 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.kafka_cluster",
                     "isPath": false,
-                    "value": "lkc-00000"
+                    "value": ""
                 }
             ],
             "auth": {
@@ -9814,12 +9814,12 @@
                 {
                     "name": "environment",
                     "isPath": false,
-                    "value": "env-00000"
+                    "value": ""
                 },
                 {
                     "name": "spec.kafka_cluster",
                     "isPath": false,
-                    "value": "lkc-00000"
+                    "value": ""
                 }
             ],
             "auth": {
