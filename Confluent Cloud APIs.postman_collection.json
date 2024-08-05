@@ -1,11 +1,11 @@
 {
 	"info": {
-		"_postman_id": "0cbb7de0-1a55-4d63-9b75-be979fc6893d",
+		"_postman_id": "98e8e92b-f172-4ae1-a556-ac97a2f8d594",
 		"name": "Confluent Cloud APIs",
 		"description": "This is an inofficial Confluent Cloud API collection for the Postman.  \nIt is based on the OpenAPI specification released by Confluent, see [https://docs.confluent.io/cloud/current](https://docs.confluent.io/cloud/current).\n\nCAUTION: Everything contained in this repository is not supported by Confluent.\n\nDISCLAIMER AND WARNING: You use this code at your own risk! Please do not use it for production systems. The author may not be held responsible for any harm caused by this code!\n\nHow to use:  \nCreate an environment and add it to this collection, providing the following variables (note: variables names are case-sensitive!):\n\nCONFLUENT_CLOUD_API_KEY=\n\nCONFLUENT_CLOUD_API_SECRET=\n\nCONFLUENT_CLOUD_CLUSTER_API_ENDPOINT=\n\nCONFLUENT_CLOUD_CLUSTER_API_ENDPOINT=\n\nCONFLUENT_CLOUD_CLUSTER_API_KEY=\n\nCONFLUENT_CLOUD_CLUSTER_API_SECRET=\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_ENDPOINT=\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_KEY=\n\nCONFLUENT_CLOUD_STREAM_GOVERNANCE_API_SECRET=",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "30172520",
-		"_collection_link": "https://cloudy-space-783357.postman.co/workspace/Confluent-Cloud-(inofficial)~66dc1cc7-70fd-477f-b57f-f43a6a76618b/collection/26587804-0cbb7de0-1a55-4d63-9b75-be979fc6893d?action=share&source=collection_link&creator=30172520"
+		"_exporter_id": "26587804",
+		"_collection_link": "https://www.postman.com/confluentcloudunofficial/workspace/confluent-cloud-inofficial/collection/26587804-98e8e92b-f172-4ae1-a556-ac97a2f8d594?action=share&source=collection_link&creator=26587804"
 	},
 	"item": [
 		{
@@ -451,7 +451,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/iam/v2/invitations?email=johndoe@confluent.io&status=INVITE_STATUS_SENT&user=u-j93dy8&creator=u-m2r9o7&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/iam/v2/invitations?email=johndoe@confluent.io&status=INVITE_STATUS_SENT&user=&creator=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -581,7 +581,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/iam/v2/role-bindings?principal=User:u-111aaa&role_name=CloudClusterAdmin&crn_pattern=&page_size=100&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/iam/v2/role-bindings?principal=&role_name=CloudClusterAdmin&crn_pattern=&page_size=100&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -1743,7 +1743,7 @@
 										{
 											"key": "spec.network",
 											"value": "",
-                                            "description": "n-00000,n-00001",
+											"description": "n-00000,n-00001",
 											"disabled": true
 										},
 										{
@@ -1793,7 +1793,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cmk/v2/clusters/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cmk/v2/clusters/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -1860,7 +1860,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cmk/v2/clusters/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cmk/v2/clusters/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -1902,7 +1902,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/ksqldbcm/v2/clusters?environment=env-00000&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/ksqldbcm/v2/clusters?environment=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -1963,7 +1963,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/ksqldbcm/v2/clusters/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/ksqldbcm/v2/clusters/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -1995,7 +1995,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/ksqldbcm/v2/clusters/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/ksqldbcm/v2/clusters/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -3815,7 +3815,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_CLUSTER_API_ENDPOINT}}/kafka/v3/clusters/:cluster_id/links?link_name=link-sb1&validate_only=true&validate_link=true",
+									"raw": "{{CONFLUENT_CLOUD_CLUSTER_API_ENDPOINT}}/kafka/v3/clusters/:cluster_id/links?link_name=&validate_only=true&validate_link=true",
 									"host": [
 										"{{CONFLUENT_CLOUD_CLUSTER_API_ENDPOINT}}"
 									],
@@ -4525,7 +4525,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/service-quota/v1/applied-quotas?scope=ORGANIZATION&environment=env-00000&network=n-12034&kafka_cluster=lkc-00000&id=iam.max_environments.per_org&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/service-quota/v1/applied-quotas?scope=ORGANIZATION&environment=&network=&kafka_cluster=&id=iam.max_environments.per_org&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -4574,7 +4574,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/service-quota/v1/applied-quotas/:id?environment=env-00000&network=n-12034&kafka_cluster=lkc-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/service-quota/v1/applied-quotas/:id?environment=&network=&kafka_cluster=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -4756,7 +4756,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/partner/v2/entitlements?organization.id=3970ae7c-405a-4007-b470-202fe4b966aa&page_size=10",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/partner/v2/entitlements?organization.id=&page_size=10",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -4952,7 +4952,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/partner/v2/entitlements/:id?organization.id=b3a17773-05cc-4431-9560-433fb4613da8",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/partner/v2/entitlements/:id?organization.id=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -5448,7 +5448,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\"\n}",
+									"raw": "{\n  \"token\": \"<The linking token that was generated>\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5492,7 +5492,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/regions?spec.cloud=AWS&spec.region_name=us-east-2&spec.packages=ESSENTIALS,ADVANCED&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/regions?spec.cloud=AWS&spec.region_name=&spec.packages=ESSENTIALS,ADVANCED&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -5564,7 +5564,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/clusters?environment=env-00000&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/clusters?environment=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -5625,7 +5625,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/clusters/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/clusters/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -5692,7 +5692,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/clusters/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/srcm/v2/clusters/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -6323,7 +6323,7 @@
 										{
 											"key": "subject",
 											"value": "",
-                                            "description": "-value"
+											"description": "-value"
 										}
 									]
 								}
@@ -7774,7 +7774,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/provider-shared-resources?stream_share=ss-1234&crn=crn://confluent.cloud/cloud-cluster=lkc-111aaa/kafka=lkc-111aaa/topic=my.topic&include_deleted=true&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/provider-shared-resources?stream_share=&crn=&include_deleted=true&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -7791,7 +7791,7 @@
 										{
 											"key": "crn",
 											"value": "",
-                                            "description": "crn://confluent.cloud/cloud-cluster=lkc-111aaa/kafka=lkc-111aaa/topic=my.topic"
+											"description": "crn://confluent.cloud/cloud-cluster=lkc-111aaa/kafka=lkc-111aaa/topic=my.topic"
 										},
 										{
 											"key": "include_deleted",
@@ -7978,7 +7978,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/provider-shares?shared_resource=sr-1234&crn=crn://confluent.cloud/cloud-cluster=lkc-111aaa/kafka=lkc-111aaa/topic=my.topic&include_deleted=true&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/provider-shares?shared_resource=&crn=&include_deleted=true&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -7995,7 +7995,7 @@
 										{
 											"key": "crn",
 											"value": "",
-                                            "description": "crn://confluent.cloud/cloud-cluster=lkc-111aaa/kafka=lkc-111aaa/topic=my.topic"
+											"description": "crn://confluent.cloud/cloud-cluster=lkc-111aaa/kafka=lkc-111aaa/topic=my.topic"
 										},
 										{
 											"key": "include_deleted",
@@ -8131,7 +8131,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/consumer-shared-resources?stream_share=ss-1234&include_deleted=true&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/consumer-shared-resources?stream_share=&include_deleted=true&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8257,7 +8257,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/consumer-shares?shared_resource=sr-1234&include_deleted=true&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/cdx/v1/consumer-shares?shared_resource=&include_deleted=true&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8469,7 +8469,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/networks?spec.display_name=prod-gcp-us-central1,prod-aws-us-east1&spec.cloud=GCP,AWS&spec.region=us-central1,us-east-1&spec.cidr=10.200.0.0/16&status.phase=PROVISIONING,READY&environment=env-00000&connection_type=peering,privatelink&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/networks?spec.display_name=&spec.cloud=&spec.region=&spec.cidr=&status.phase=&environment=&connection_type=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8482,27 +8482,27 @@
 										{
 											"key": "spec.display_name",
 											"value": "",
-                                            "description": "prod-gcp-us-central1,prod-aws-us-east1"
+											"description": "prod-gcp-us-central1,prod-aws-us-east1"
 										},
 										{
 											"key": "spec.cloud",
 											"value": "",
-                                            "description": "GCP,AWS"
+											"description": "GCP,AWS"
 										},
 										{
 											"key": "spec.region",
 											"value": "",
-                                            "description": "us-central1,us-east-1"
+											"description": "us-central1,us-east-1"
 										},
 										{
 											"key": "spec.cidr",
 											"value": "",
-                                            "description": "10.200.0.0/16"
+											"description": "10.200.0.0/16"
 										},
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "PROVISIONING,READY"
+											"description": "PROVISIONING,READY"
 										},
 										{
 											"key": "environment",
@@ -8511,7 +8511,7 @@
 										{
 											"key": "connection_type",
 											"value": "",
-                                            "description": "peering,privatelink"
+											"description": "peering,privatelink"
 										},
 										{
 											"key": "page_size",
@@ -8560,7 +8560,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/networks/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/networks/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8627,7 +8627,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/networks/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/networks/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8664,7 +8664,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/peerings?spec.display_name=prod-peering-uscentral1,prod-peering-use1&status.phase=PROVISIONING,READY&environment=env-00000&spec.network=n-00000,n-00001&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/peerings?spec.display_name=&status.phase=&environment=&spec.network=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8677,12 +8677,12 @@
 										{
 											"key": "spec.display_name",
 											"value": "",
-                                            "description": "prod-peering-uscentral1,prod-peering-use1"
+											"description": "prod-peering-uscentral1,prod-peering-use1"
 										},
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "PROVISIONING,READY"
+											"description": "PROVISIONING,READY"
 										},
 										{
 											"key": "environment",
@@ -8691,7 +8691,7 @@
 										{
 											"key": "spec.network",
 											"value": "",
-                                            "description": "n-00000,n-00001"
+											"description": "n-00000,n-00001"
 										},
 										{
 											"key": "page_size",
@@ -8740,7 +8740,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/peerings/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/peerings/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8807,7 +8807,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/peerings/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/peerings/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8844,7 +8844,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/transit-gateway-attachments?spec.display_name=prod-tgw-use1,prod-tgw-usw2&status.phase=PROVISIONING,READY&environment=env-00000&spec.network=n-00000,n-00001&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/transit-gateway-attachments?spec.display_name=&status.phase=&environment=&spec.network=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8857,12 +8857,12 @@
 										{
 											"key": "spec.display_name",
 											"value": "",
-                                            "description": "prod-tgw-use1,prod-tgw-usw2"
+											"description": "prod-tgw-use1,prod-tgw-usw2"
 										},
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "PROVISIONING,READY"
+											"description": "PROVISIONING,READY"
 										},
 										{
 											"key": "environment",
@@ -8871,7 +8871,7 @@
 										{
 											"key": "spec.network",
 											"value": "",
-                                            "description": "n-00000,n-00001"
+											"description": "n-00000,n-00001"
 										},
 										{
 											"key": "page_size",
@@ -8920,7 +8920,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/transit-gateway-attachments/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/transit-gateway-attachments/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -8987,7 +8987,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/transit-gateway-attachments/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/transit-gateway-attachments/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9024,7 +9024,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-accesses?spec.display_name=prod-pl-use1,prod-pl-usw2&status.phase=PROVISIONING,READY&environment=env-00000&spec.network=n-00000,n-00001&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-accesses?spec.display_name=&status.phase=&environment=&spec.network=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9037,12 +9037,12 @@
 										{
 											"key": "spec.display_name",
 											"value": "",
-                                            "description": "prod-pl-use1,prod-pl-usw2"
+											"description": "prod-pl-use1,prod-pl-usw2"
 										},
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "PROVISIONING,READY"
+											"description": "PROVISIONING,READY"
 										},
 										{
 											"key": "environment",
@@ -9051,7 +9051,7 @@
 										{
 											"key": "spec.network",
 											"value": "",
-                                            "description": "n-00000,n-00001"
+											"description": "n-00000,n-00001"
 										},
 										{
 											"key": "page_size",
@@ -9100,7 +9100,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-accesses/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-accesses/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9167,7 +9167,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-accesses/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-accesses/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9204,7 +9204,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-services?spec.display_name=prod-net-1-nls,dev-net-1-nls&status.phase=READY&environment=env-00000&spec.network=n-00000,n-00001&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-services?spec.display_name=&status.phase=&environment=&spec.network=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9217,12 +9217,12 @@
 										{
 											"key": "spec.display_name",
 											"value": "",
-                                            "description": "prod-net-1-nls,dev-net-1-nls"
+											"description": "prod-net-1-nls,dev-net-1-nls"
 										},
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "READY"
+											"description": "READY"
 										},
 										{
 											"key": "environment",
@@ -9231,7 +9231,7 @@
 										{
 											"key": "spec.network",
 											"value": "",
-                                            "description": "n-00000,n-00001"
+											"description": "n-00000,n-00001"
 										},
 										{
 											"key": "page_size",
@@ -9280,7 +9280,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-services/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-services/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9347,7 +9347,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-services/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-services/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9384,7 +9384,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-endpoints?spec.display_name=prod-net-1-nle,dev-net-1-nle&status.phase=READY,PENDING_ACCEPT&environment=env-00000&spec.network=n-00000,n-00001&spec.network_link_service=nls-abcde,nls-00000&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-endpoints?spec.display_name=&status.phase=&environment=&spec.network=&spec.network_link_service=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9397,12 +9397,12 @@
 										{
 											"key": "spec.display_name",
 											"value": "",
-                                            "description": "prod-net-1-nle,dev-net-1-nle"
+											"description": "prod-net-1-nle,dev-net-1-nle"
 										},
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "READY,PENDING_ACCEPT"
+											"description": "READY,PENDING_ACCEPT"
 										},
 										{
 											"key": "environment",
@@ -9411,12 +9411,12 @@
 										{
 											"key": "spec.network",
 											"value": "",
-                                            "description": "n-00000,n-00001"
+											"description": "n-00000,n-00001"
 										},
 										{
 											"key": "spec.network_link_service",
 											"value": "",
-                                            "description": "nls-abcde,nls-00000"
+											"description": "nls-abcde,nls-00000"
 										},
 										{
 											"key": "page_size",
@@ -9465,7 +9465,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-endpoints/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-endpoints/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9532,7 +9532,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-endpoints/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-endpoints/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9569,7 +9569,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-service-associations?status.phase=READY,PENDING_ACCEPT&spec.network_link_service=nls-abcde&environment=env-00000&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/network-link-service-associations?status.phase=&spec.network_link_service=&environment=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9582,7 +9582,7 @@
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "READY,PENDING_ACCEPT"
+											"description": "READY,PENDING_ACCEPT"
 										},
 										{
 											"key": "spec.network_link_service",
@@ -9642,7 +9642,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/ip-addresses?cloud=GCP,AWS&region=us-central1,us-east-1&services=KAFKA,CONNECT&address_type=INGRESS,EGRESS&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/ip-addresses?cloud=&region=&services=&address_type=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9655,22 +9655,22 @@
 										{
 											"key": "cloud",
 											"value": "",
-                                            "description": "GCP,AWS"
+											"description": "GCP,AWS"
 										},
 										{
 											"key": "region",
 											"value": "",
-                                            "description": "us-central1,us-east-1"
+											"description": "us-central1,us-east-1"
 										},
 										{
 											"key": "services",
 											"value": "",
-                                            "description": "KAFKA,CONNECT"
+											"description": "KAFKA,CONNECT"
 										},
 										{
 											"key": "address_type",
 											"value": "",
-                                            "description": "INGRESS,EGRESS"
+											"description": "INGRESS,EGRESS"
 										},
 										{
 											"key": "page_size",
@@ -9696,7 +9696,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachments?spec.display_name=prod-gcp-us-central1,prod-aws-useast1&spec.cloud=GCP,AWS&spec.region=us-central1,us-east-1&status.phase=PROVISIONING,READY&environment=env-00000&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachments?spec.display_name=&spec.cloud=&spec.region=&status.phase=&environment=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9709,22 +9709,22 @@
 										{
 											"key": "spec.display_name",
 											"value": "",
-                                            "description": "prod-gcp-us-central1,prod-aws-useast1"
+											"description": "prod-gcp-us-central1,prod-aws-useast1"
 										},
 										{
 											"key": "spec.cloud",
 											"value": "",
-                                            "description": "GCP,AWS"
+											"description": "GCP,AWS"
 										},
 										{
 											"key": "spec.region",
 											"value": "",
-                                            "description": "us-central1,us-east-1"
+											"description": "us-central1,us-east-1"
 										},
 										{
 											"key": "status.phase",
 											"value": "",
-                                            "description": "PROVISIONING,READY"
+											"description": "PROVISIONING,READY"
 										},
 										{
 											"key": "environment",
@@ -9777,7 +9777,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachments/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachments/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9844,7 +9844,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachments/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachments/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9881,7 +9881,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachment-connections?environment=env-00000&spec.private_link_attachment=platt-00000&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachment-connections?environment=&spec.private_link_attachment=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -9946,7 +9946,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachment-connections/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachment-connections/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10013,7 +10013,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachment-connections/:id?environment=env-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/networking/v1/private-link-attachment-connections/:id?environment=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10112,7 +10112,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/kafka-quotas/v1/client-quotas?spec.cluster=lkc-xxxxx&environment=env-xxxxx&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/kafka-quotas/v1/client-quotas?spec.cluster=&environment=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10274,7 +10274,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/sd/v1/pipelines?environment=env-00000&spec.kafka_cluster=lkc-00000&page_size=100&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/sd/v1/pipelines?environment=&spec.kafka_cluster=&page_size=100&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10339,7 +10339,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/sd/v1/pipelines/:id?environment=env-00000&spec.kafka_cluster=lkc-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/sd/v1/pipelines/:id?environment=&spec.kafka_cluster=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10410,7 +10410,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/sd/v1/pipelines/:id?environment=env-00000&spec.kafka_cluster=lkc-00000",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/sd/v1/pipelines/:id?environment=&spec.kafka_cluster=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10456,7 +10456,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/byok/v1/keys?provider=AWS&state=IN_USE&page_size=10&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/byok/v1/keys?provider=&state=&page_size=10&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10469,12 +10469,12 @@
 										{
 											"key": "provider",
 											"value": "",
-                                            "description": "AWS"
+											"description": "AWS"
 										},
 										{
 											"key": "state",
 											"value": "",
-                                            "description": "IN_USE"
+											"description": "IN_USE"
 										},
 										{
 											"key": "page_size",
@@ -10585,7 +10585,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/billing/v1/costs?start_date=2022-10-12&end_date=2022-10-15&page_size=5000&page_token=",
+									"raw": "{{CONFLUENT_CLOUD_BASE_URL}}/billing/v1/costs?start_date=&end_date=&page_size=5000&page_token=",
 									"host": [
 										"{{CONFLUENT_CLOUD_BASE_URL}}"
 									],
@@ -10598,12 +10598,12 @@
 										{
 											"key": "start_date",
 											"value": "",
-                                            "description": "2022-10-12"
+											"description": "2022-10-12"
 										},
 										{
 											"key": "end_date",
 											"value": "",
-                                            "description": "2022-10-15"
+											"description": "2022-10-15"
 										},
 										{
 											"key": "page_size",
@@ -10663,7 +10663,7 @@
 								{
 									"key": "dataset",
 									"value": "cloud",
-                                    "description": "cloud"
+									"description": "cloud"
 								}
 							]
 						}
@@ -10703,7 +10703,7 @@
 								{
 									"key": "dataset",
 									"value": "cloud",
-                                    "description": "cloud"
+									"description": "cloud"
 								}
 							]
 						}
@@ -10739,7 +10739,7 @@
 								{
 									"key": "dataset",
 									"value": "cloud",
-                                    "description": "cloud"
+									"description": "cloud"
 								}
 							]
 						}
@@ -10798,7 +10798,7 @@
 								{
 									"key": "dataset",
 									"value": "cloud",
-                                    "description": "cloud"
+									"description": "cloud"
 								}
 							]
 						}
@@ -10839,7 +10839,7 @@
 								{
 									"key": "dataset",
 									"value": "cloud",
-                                    "description": "cloud"
+									"description": "cloud"
 								}
 							]
 						}
