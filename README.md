@@ -28,7 +28,7 @@ Have fun with the API.
 
 ## How to update (internal, not recommended)
 
-Download the latest OpenAPI spec from Confluent Cloud and save it as e.g. `temp/openapi.json`.
+Download the latest OpenAPI spec from Confluent Cloud and save it as e.g. `openapi.json`.
 
 Use the method described [here](https://blog.postman.com/creating-an-openapi-definition-from-a-collection-with-the-postman-api) to translate the current collection to OpenAPI.
 First, set some environment variables:
@@ -43,20 +43,14 @@ Then export to openapi format:
 ```shell
 curl --location --request GET "https://api.getpostman.com/collections/${POSTMAN_COLLECTION}/transformations" \
 --header "Content-Type: application/json" \
---header "x-api-key: ${POSTMAN_APIKEY}" | jq -r ".output" | sed 's/\\n/\'$'\n''/g;s/\\\"/"/g;s/claims.aud==.*$/claims.aud==",/' > temp/openapi-export.json
-```
-
-```shell
-curl --location --request GET "https://api.getpostman.com/collections/${POSTMAN_COLLECTION}/transformations" \
---header "Content-Type: application/json" \
---header "x-api-key: ${POSTMAN_APIKEY}" | jq -r ".output | fromjson" > temp/openapi-export.json
+--header "x-api-key: ${POSTMAN_APIKEY}" | jq -r ".output | fromjson" > openapi-export.json
 ```
 
 For identifying any calls not yet present in the postman collection, get all paths, sort them and compare them with each other.
 
 ```shell
-cat temp/openapi-export.json | jq -r ".paths | keys" > temp/openapi-export-keys-sorted.json
-cat temp/openapi.json | jq -r ".paths | keys" > temp/openapi-keys-sorted.json
+cat openapi-export.json | jq -r ".paths | keys" > openapi-export-keys-sorted.json
+cat openapi.json | jq -r ".paths | keys" > openapi-keys-sorted.json
 ```
 
 Compare the result files `temp/openapi-export-keys-sorted.json` and `temp/openapi-keys-sorted.json` with each other to find the differences.
