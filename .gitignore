@@ -2,3 +2,8 @@
 env
 *.conf
 temp
+.venv
+openapi.yaml
+__pycache__
+collection.json
+grouped_collection.json

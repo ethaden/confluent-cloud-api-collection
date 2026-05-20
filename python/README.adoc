@@ -1,0 +1,15 @@
+= This tool post-processes the converted openapi specification
+
+== Usage
+
+Install the `uv` package manager. Initialize the python virtual environment:
+
+```console
+uv sync
+```
+
+Run the post-processing step:
+
+```console
+uv run python main.py ../openapi.yaml ../collection.json ../grouped_collection.json
+```

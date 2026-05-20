@@ -14,7 +14,22 @@ Log in to Postman with your account and choose a workspace.
 
 Have fun with the API.
 
-## How to update (full update)
+## How to update
+
+First, export the latest version of the OpenAPI spec from the Confluent website: https://api.confluent.cloud
+
+The conversion is done by this open source tool: https://github.com/postmanlabs/openapi-to-postman
+
+Install the tool following their instructions.
+
+Run it on the export file `openapi.yaml`:
+
+```console
+openapi2postmanv2 -s openapi.yaml -o collection.json -p -O folderStrategy=Tags,includeAuthInfoInExample=false,nestedFolderHierarchy=true,alwaysInheritAuthentication=true
+```
+
+
+## Old: How to update (full update)
 
 * Export OpenAPI spec from Confluent Website.
 * Import the spec into Postman as new collection. Set switches to always inherit authentication and to import based on tags instead of pathes.

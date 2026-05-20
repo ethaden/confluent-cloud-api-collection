@@ -1,0 +1,9 @@
+[project]
+name = "confluent_openapi_to_postman_postprocessing"
+version = "0.1.0"
+description = "This tool does some post-processing on Postman files generated from the Confluent Cloud OpenAPI specification"
+readme = "README.adoc"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=6.0.3",
+]
